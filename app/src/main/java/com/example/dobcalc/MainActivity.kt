@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
         val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
         val dpd = DatePickerDialog(this, {view, selectedYear, selectedMonth, selectedDayOfMonth ->
-            val selectedDate = "${selectedYear}/${selectedMonth+1}/${selectedMonth}"
+            val selectedDate = "${selectedYear}/${selectedMonth+1}/${selectedDayOfMonth}"
             tvSelectedDate?.text = selectedDate
 
-            val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.KOREA)
+            val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
             val theDate = sdf.parse(selectedDate)
 
             theDate.let {
