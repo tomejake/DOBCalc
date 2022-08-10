@@ -34,3 +34,7 @@ wrap_content / match_parent 차이: https://island-developer.tistory.com/3
 
 ## DatePickerDialog
 - 날짜를 누를수있는 기능
+
+### DatePickerDialog 현재 날짜보다 앞 날짜는 안나오도록 설정 예시
+- DatePickerDialog를 변수로 지정 (예시 변수명=dpd)
+- dpd.datePicker.maxDate = System.currentTimeMillis() - 86400000
