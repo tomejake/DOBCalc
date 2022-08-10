@@ -22,3 +22,15 @@ wrap_content / match_parent 차이: https://island-developer.tistory.com/3
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ### 버튼의 배경색 변경은 backgroundTint를 사용한다.
+
+### MainActivity에서 id값으로 아이템 찾는 예시
+- val btnDatePicker: Button = findViewById(R.id.btnDatePicker)
+
+## 현재날짜 구해오는 예시
+    val myCalendar = Calendar.getInstance()
+    val year = myCalendar.get(Calendar.YEAR)
+    val month = myCalendar.get(Calendar.MONTH)
+    val day = myCalendar.get(Calendar.DAY_OF_MONTH)
+
+## DatePickerDialog
+- 날짜를 누를수있는 기능
